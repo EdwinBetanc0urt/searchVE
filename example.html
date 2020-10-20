@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Search Person In Venezuela</title>
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    -->
+  </head>
+  <body style="background-color: dimgray;">
+    <br><br><br>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+
+          <div class="input-field col s6">
+            <label for="documentTypesList">Document Type</label>
+            <select id="documentTypesList" required>
+              <option value="">Select a value...</option>
+            </select>
+          </div>
+
+          <div class="input-field col s6">
+            <label for="documentNumber">Identifier Number</label>
+            <input id="documentNumber" type="number" required />
+          </div>
+
+          <div class="col s6" id="digitValidatorContainer">
+            <label for="digitValidator">Digit Validator</label>
+            <input id="digitValidator" type="number" />
+          </div>
+
+          <div class="col s6">
+            <label for="birthDate">Birth Date</label>
+            <input id="birthDate" type="date" />
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6">
+          <label for="cne">CNE</label>
+          <input id="cne" type="checkbox" />
+        </div>
+        <div class="col s6">
+          <label for="cne">IVSS Pensiones</label>
+          <input id="cne" type="checkbox" />
+        </div>
+        <div class="col s6">
+          <label for="cne">IVSS Individual</label>
+          <input id="cne" type="checkbox" />
+        </div>
+        <div class="col s6">
+          <label for="cne">SENIAT</label>
+          <input id="cne" type="checkbox" />
+        </div>
+
+        <div class="input-field col s6">
+          <button type="button" id="searchPerson">
+            Search Person
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="./public/example.js"></script>
+  </body>
+</html>
